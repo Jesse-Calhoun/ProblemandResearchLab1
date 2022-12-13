@@ -8,3 +8,9 @@ def reverse_word():
         reversed_word += word[index]
     print(reversed_word)
 reverse_word()
+#task 2
+def cap_each_first_letter():
+    response = input('Type a random sentence. ')
+    capped_response = response.title()  
+    print(capped_response)  
+cap_each_first_letter()
