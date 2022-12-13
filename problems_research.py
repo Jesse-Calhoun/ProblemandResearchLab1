@@ -7,7 +7,7 @@ import random
 #     return random_num
 
 def difference_of_numbers(number):
-   difference = number - random.randint(0, favorite_number)
+   difference = abs(number - random.randint(0, favorite_number*2))
    return difference
 
 
