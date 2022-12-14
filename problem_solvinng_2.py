@@ -12,21 +12,20 @@
 #task 2 
 def cap_each_first_letter():
     response = input("Type A Sentence To Be Formatted The Same As This Request: ")
-    split_response = response.split(" ")
+    split_words = response.split(" ")
     formatted_response = ""
     word = 0
-    for word in split_response:
+    for word in split_words:
         i = 0
-        split_word = list(word)
-        split_word[i] = split_word[i].upper()
+        split_letters = list(word)
+        split_letters[i] = split_letters[i].upper()
         seperator = ''
-        joined_word = seperator.join(split_word)
+        joined_word = seperator.join(split_letters)
         formatted_response += joined_word + ' '
     print()
     print(formatted_response)
     print()
     
-
     #print(split_word)
         
         #formatted_response = formatted_response + split_response[word+1].capitalize()
