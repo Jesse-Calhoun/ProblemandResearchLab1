@@ -21,15 +21,11 @@ def cap_each_first_letter():
         split_word[i] = split_word[i].upper()
         seperator = ''
         joined_word = seperator.join(split_word)
-        formatted_response += ' ' + joined_word
+        formatted_response += joined_word + ' '
     print()
     print(formatted_response)
     print()
-        ##print(split_word)
-        # if split_word[i] != split_word[i].upper:
-        #     capped_letter = split_word[i].upper
-        #     split_word[i] = capped_letter
-        #     return split_word
+    
 
     #print(split_word)
         
