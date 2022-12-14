@@ -1,13 +1,13 @@
 new_string = ""
-string = "aaaabbbrrraccaaadaabbrrraaa"
+string = "aaabrraaaccccaaadddddaaabrra"
 count = 1
 for i in range(len(string)-1):
     if string[i] == string[i+1]:
         count = count + 1
     else:
-        new_string = new_string +string[i] + str(count)
+        new_string += str(count) + string[i]
         count = 1
-new_string = new_string + string[i+1] + str(count)
+new_string += str(count) + string[i+1]
 print()
 print(new_string)
 print()
