@@ -11,9 +11,35 @@
 #reverse_word()
 #task 2 
 def cap_each_first_letter():
-    response = input('Type A Sentence To Be Formatted The Same As This Request: ')
-    result = response.split(' ')
-    print(result)
+    response = input("Type A Sentence To Be Formatted The Same As This Request: ")
+    split_response = response.split(" ")
+    formatted_response = ""
+    word = 0
+    for word in split_response:
+        i = 0
+        split_word = list(word)
+        split_word[i] = split_word[i].upper()
+        seperator = ''
+        joined_word = seperator.join(split_word)
+        formatted_response += ' ' + joined_word
+    print()
+    print(formatted_response)
+    print()
+        ##print(split_word)
+        # if split_word[i] != split_word[i].upper:
+        #     capped_letter = split_word[i].upper
+        #     split_word[i] = capped_letter
+        #     return split_word
+
+    #print(split_word)
+        
+        #formatted_response = formatted_response + split_response[word+1].capitalize()
+        #i += 1
+    #print(split_response)
+        # formatted_response = response.split(" ")[0].capitalize() + response.split(" ")[1].capitalize()
+        # print(formatted_response)
+    # result = response.split(' ')
+    # print(result)
 
 cap_each_first_letter()    
 # def cap_each_first_letter():
