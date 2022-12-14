@@ -7,6 +7,7 @@ def reverse_word(word):
     for index in range(len(word) -1, -1, -1):
         reversed_word += word[index]
     return reversed_word
+    #print(reversed_word)  <---commented this out so I could return a value rather than print to be used in task 3
 #reverse_word()
 #task 2
 # def cap_each_first_letter():
